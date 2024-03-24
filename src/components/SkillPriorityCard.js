@@ -45,7 +45,7 @@ const SkillPriorityCard = ({skills, skillType, id }) => {
       onDragEnter={handleDragEnter}
       onDragLeave={handleDragLeave}
     
-      className={` my-2 box-border bg-white min-h-60 overflow-y-scroll transition-all ${isDraggingOver?'border-2 border-dotted border-slate-500':''}`}>
+      className={` my-2 box-border bg-white min-h-60 rounded-md overflow-y-scroll transition-all ${isDraggingOver?'border-2 border-dotted border-slate-500':''}`}>
       <h4 className='text-xl font-semibold m-2'>{skillType}</h4>
       <div>
         {skills.map(skill=><SkillPileWithButton onRemoveHandler={handleRemoveSkills} key={skill.id} color={COLORS[skill.type]} skill={skill} />)}

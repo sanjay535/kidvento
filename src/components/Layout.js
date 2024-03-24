@@ -2,6 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import SkillCard from './SkillCard'
 import SkillPriorityCard from './SkillPriorityCard'
+import SchoolLevelCard from './SchoolLevelCard'
 
 
 const Layout = () => {
@@ -12,11 +13,11 @@ const Layout = () => {
     
     return (
         <div className='max-w-[100%] my-4 min-h-[100vh]'>
-            <div className='grid grid-cols-[20%_40%_40%] max-w-[90%] mx-auto bg-[#f2f2f2] gap-4'>
+            <div className='grid grid-cols-[15%_40%_40%] max-w-[90%] mx-auto bg-[#f2f2f2] gap-4'>
             <div className='rounded-md'>
                 <h2 className='text-white text-2xl py-2 bg-black text-center rounded-tl-md rounded-tr-md'>School Level</h2>
                 <div className='py-4'>
-                    
+                    <SchoolLevelCard text={'Level 0'}/>
                 </div>
             </div>
             <div className='rounded-md'>

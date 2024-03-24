@@ -4,9 +4,9 @@ import { COLORS } from '../utils/constant'
 
 const SkillCard = ({skillType, skills}) => {
   return (
-    <div className='p-4 bg-[#E2EBF8] my-2'>
+    <div className='p-4 bg-[#E2EBF8] my-2 rounded-md'>
         <h4 className='text-xl font-semibold my-2'>{skillType}</h4>
-        <div className='flex flex-wrap p-4 bg-white'>
+        <div className='flex flex-wrap p-4 bg-white rounded-md'>
         {skills.map(skill=><SkillPile key={skill.id} color={COLORS[skill.type]} skill={skill}/>)}
         </div>
     </div>
